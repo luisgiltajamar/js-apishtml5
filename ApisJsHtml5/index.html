@@ -7,11 +7,29 @@
             cursor: pointer;
 
         }
+        #dragame {
+            width: 200px;height: 150px;border: blue double 3px;
 
+        }
+        #dropeame {
+            min-width: 200px;min-height: 150px;border: green double 3px;
+
+        }
     </style>
 </head>
     <body>
-        <div id="donde">
+        
+        <div id="dragame" draggable="true">
+            A que no me arrastras
+
+        </div>
+        
+        <div id="dropeame" >
+         
+
+        </div>
+
+        <div id="donde" >
             <span id="latitud"></span>
             <span id="longitud"></span>
             <span id="error"></span>
@@ -20,8 +38,19 @@
         <div class="dibujo">
             Aqui voy a poner un dibujo
         </div>
-        <div class="dibujo">
-            Aqui voy a poner un dibujo
+        <div >
+            <canvas id="dibujame">
+                
+
+            </canvas>
+        </div>
+        <div>
+            <input type="email" id="txtEmail" />
+            <input type="button" value="Guardar" id="btnGuardar"/>
+            <ul id="emails">
+                
+
+            </ul>
         </div>
         <script src="js/js1.js"></script>
     </body>
